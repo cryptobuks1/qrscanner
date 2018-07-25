@@ -1,0 +1,78 @@
+<!-- -->
+<ion-content padding class="animated fadeIn login auth-page">
+  <div class="login-content">
+
+    <!-- Logo -->
+    <div padding-horizontal text-center class="animated fadeInDown">
+      <div class="logo"></div>
+      <h2 ion-text class="text-primary">
+        <strong>STARPAY </strong>
+      </h2>
+    </div>
+    <br>
+    <br>
+    <!-- Login form -->
+    <form class="list-form" #loginForm="ngForm" [formGroup]="myForm" (ngSubmit)="login()">
+       
+      <h6 style="text-align: center;"><label>Enter Mobile No.</label></h6>
+      <ion-item>
+        <!-- <ion-label floating>
+          <ion-icon name="call" item-start class="text-primary"></ion-icon>
+          Mobile
+        </ion-label> -->
+        <ion-input type="tel" formControlName="mobile" pattern="[0-9]*" minlength="10" placeholder="Enter mobile no." maxlength="10" required></ion-input>
+      </ion-item>
+
+      <!-- <ion-item>
+        <ion-label floating>
+          <ion-icon name="lock" item-start class="text-primary"></ion-icon>
+          Password
+        </ion-label>
+        <ion-input type="password"></ion-input>
+      </ion-item> -->
+
+      <button [disabled]="!loginForm.valid" ion-button icon-start block color="dark" tappable type="submit">
+        <ion-icon name="log-in"></ion-icon>
+        GO
+      </button>
+      <!-- <ion-spinner name="bubbles"></ion-spinner> -->
+
+    </form>
+
+    <!-- <p text-right ion-text color="secondary" tappable (click)="forgotPass()"><strong>Forgot Password?</strong></p> -->
+
+    <div>
+      
+
+      <!-- <p text-center ion-text color="secondary">Or Sign in with:</p>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4>
+            <button ion-button icon-only block class="btn-facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </button>
+          </ion-col>
+          <ion-col col-4>
+            <button ion-button icon-only block class="btn-twitter">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </button>
+          </ion-col>
+          <ion-col col-4>
+            <button ion-button icon-only block class="btn-gplus">
+              <ion-icon name="logo-googleplus"></ion-icon>
+            </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid> -->
+
+    </div>
+
+
+    <!-- Other links -->
+    <!-- <div text-center margin-top>
+      <span ion-text color="secondary" tappable (click)="register()">New here? <strong>Sign up</strong></span>
+    </div> -->
+
+  </div>
+</ion-content>

@@ -1,0 +1,63 @@
+<!-- -->
+<ion-header>
+  <ion-navbar color="primary">
+  		<button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>
+      <span ion-text>Profile</span>
+    </ion-title>
+    <ion-buttons end>
+      <!-- <button ion-button tappable (click)="presentNotifications($event)">
+        <ion-icon name="notifications"></ion-icon>
+      </button> -->
+      <!-- <button ion-button tappable (click)="goToAccount()">
+        <ion-icon name="cog"></ion-icon>
+      </button> -->
+    </ion-buttons>
+  </ion-navbar>
+<!-- </ion-header> -->
+
+  <!--  -->
+  <!-- <ion-toolbar padding color="light">
+    <p ion-text no-margin class="text-white">
+      <strong style="text-align: center;">Users</strong> 
+    </p>
+  </ion-toolbar> -->
+
+</ion-header>
+
+<ion-content padding class="trips common-bg">
+      <!-- Logo -->
+      <div padding text-center>
+        <div class="logo">
+          <div class="user-avatar">
+            <img src="https://ienglishstatus.com/wp-content/uploads/2018/04/Anonymous-Whatsapp-profile-picture.jpg" width="100" height="100" style="border-radius: 50%;">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Login form -->
+      <form class="list-form" #registerForm="ngForm" [formGroup]="myForm" (ngSubmit)="save()">
+        <ion-item>
+          <ion-label floating>
+            <ion-icon name="person" class="text-primary"></ion-icon>
+            Name
+          </ion-label>
+          <ion-input type="text" formControlName="name" required></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label floating>
+            <ion-icon name="mail" item-start class="text-primary"></ion-icon>
+            Email
+          </ion-label>
+          <ion-input type="email" name="email" formControlName="email" required></ion-input>
+        </ion-item>
+        <div margin-top>
+          <button [disabled]="!registerForm.valid" ion-button block color="dark" tappable type="submit">
+            Save
+          </button>
+        </div>
+      </form>      
+</ion-content>

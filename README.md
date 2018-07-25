@@ -1,0 +1,3 @@
+# Ionic 3 Scanner App
+
+Ionic 3 Scanner App with 10 Pages, mock data, providers samples, Storage, Http and more...
