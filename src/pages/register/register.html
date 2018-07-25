@@ -1,0 +1,67 @@
+<!-- -->
+<ion-content class="auth-page">
+  <div class="login-content">
+
+    <!-- Logo -->
+    <div padding text-center>
+      <div class="logo"></div>
+      <h2 ion-text class="text-primary">
+        <strong>QR</strong> Scanner
+      </h2>
+    </div>
+
+    <!-- Login form -->
+    <form class="list-form" #registerForm="ngForm" [formGroup]="myForm" (ngSubmit)="register()">
+      <ion-item>
+        <!-- <ion-label floating>
+          <ion-icon name="person" class="text-primary"></ion-icon>
+          Name
+        </ion-label> -->
+        <ion-input type="text" formControlName="name" placeholder="Name"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <!-- <ion-label floating>
+          <ion-icon name="mail" item-start class="text-primary"></ion-icon>
+          Email
+        </ion-label> -->
+        <ion-input type="email" name="email" formControlName="email" placeholder="Email" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <!-- <ion-label floating>
+          <ion-icon name="call" item-start class="text-primary"></ion-icon>
+          Mobile
+        </ion-label> -->
+        <ion-input type="tel" placeholder="Mobile" formControlName="mobile" pattern="[0-9]*" minlength="10" maxlength="10" required></ion-input>
+      </ion-item>
+
+      <ion-list radio-group formControlName="gender">
+        <ion-list-header>
+          Gender
+        </ion-list-header>
+      
+        <ion-item>
+          <ion-label>Male</ion-label>
+          <ion-radio value="male" name="gender"></ion-radio>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Female</ion-label>
+          <ion-radio value="female" name="gender"></ion-radio>
+        </ion-item>
+      </ion-list>
+
+      <div margin-top>
+        <button [disabled]="!registerForm.valid" ion-button block color="dark" tappable type="submit">
+          SIGN UP
+        </button>
+      </div>
+    </form>
+    <!-- Other links -->
+    <div text-center margin-top>
+      <span ion-text color="primary" tappable (click)="login()">I have an account</span>
+    </div>
+
+  </div>
+</ion-content>

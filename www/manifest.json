@@ -1,0 +1,13 @@
+{
+  "name": "STARPAY",
+  "short_name": "qr_scanner",
+  "start_url": "index.html",
+  "display": "standalone",
+  "icons": [{
+    "src": "assets/img/qrscanner.jpg",
+    "sizes": "512x512",
+    "type": "image/jpg"
+  }],
+  "background_color": "#0039a2",
+  "theme_color": "#0039a2"
+}

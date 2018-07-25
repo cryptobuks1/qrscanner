@@ -1,0 +1,30 @@
+
+https://help.msg91.com/category/18-delivery-report
+
+sudo cordova platform rm android
+sudo cordova platform add android@latest
+
+sudo ionic cordova resources android
+sudo ionic cordova prepare android
+sudo ionic cordova build android
+sudo ionic cordova run android --livereload
+
+While generate app 
+sudo ionic cordova plugin add cordova-plugin-contacts
+
+- Application error issue in android emulator “There was an network error”
+sudo cordova plugin add cordova-plugin-whitelist
+
+- for device data
+sudo ionic cordova plugin add cordova-plugin-device
+
+sudo ionic cordova plugin add cordova-plugin-qrscanner
+
+sudo ionic cordova plugin add cordova-plugin-splashscreen
+
+sudo cordova plugin add cordova-plugin-android-permissions
+
+sudo cordova plugin add cordova-plugin-sms
+
+-For creashing issue (put this line in xml file)
+<preference name="loadUrlTimeoutValue" value="70000" />

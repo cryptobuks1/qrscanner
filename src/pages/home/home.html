@@ -1,0 +1,33 @@
+<!-- -->
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      <strong>STARPAY</strong>
+    </ion-title>
+    <ion-buttons end>
+      <!-- <button ion-button tappable (click)="presentNotifications($event)">
+        <ion-icon name="notifications"></ion-icon>
+      </button> -->
+      <!-- <button ion-button tappable (click)="goToAccount()">
+        <ion-icon name="menu"></ion-icon>
+      </button> -->
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="animated fadeIn common-bg" [ngStyle]="{'background-image': 'url(' +background+ ')'}">
+  <!-- [style.backgroundImage]="background"  -->
+  <!-- <img src="{{background}}" style="bac"> -->
+  <button ion-button icon-start block no-margin color="primary" class="round" tappable (click)="payNow()" style="top: 36%;
+  width: 30%;
+  left: 36%;
+  border-radius: 52%;
+  height: 18%;">
+     Pay Now
+  </button> 
+
+
+</ion-content>

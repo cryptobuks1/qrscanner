@@ -1,0 +1,29 @@
+<!-- -->
+<ion-header class="no-shadow">
+
+  <ion-navbar class="no-border">
+    <ion-title>
+      <!-- <ion-icon name="cog" class="text-primary"></ion-icon> -->
+      <span class="text-primary">STARPAY</span>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="common-bg">
+  <ion-item-group>
+    <ion-item (click)="updateProfile()">
+      Update Profile
+    </ion-item>
+    <ion-item>
+      <span>Terms & Policies</span>
+    </ion-item>
+    <ion-item>
+      <span>Setting</span>
+    </ion-item>
+  </ion-item-group>
+  
+  <!--sign out button-->
+  <button ion-button color="primary" full tappable (click)="logout()">LOG OUT</button>
+
+</ion-content>
