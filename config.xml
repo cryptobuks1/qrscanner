@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.asiancheckout.starpay" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>STARPAY</name>
-    <description>Ionic 3 STARPAY</description>
-    <author email="firminoata@gmail.com" href="https://ionictheme.com">Ionic Theme</author>
+<widget id="com.hktechnolab.qrscanner" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>QR Scanner</name>
+    <description>Ionic 3 QR Scanner</description>
+    <author email="savaliyamohit28@gmail.com" href="http://hktechnolab.com">Mohit</author>
     <content src="index.html" />
     <allow-navigation href="*" />
     <allow-navigation href="http://*/*" />
@@ -16,7 +16,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <access origin="http://qrcode.asktech-development.website" />
+    <access origin="http://localhost/api" />
     <access launch-external="yes" origin="tel:*" />
     <access launch-external="yes" origin="mailto:*" />
     <platform name="android">
